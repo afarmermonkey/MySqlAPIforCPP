@@ -1,5 +1,11 @@
-﻿// test_ccmysql.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/************************FILE INFOMATION***********************************
+**
+** Project Project       : C++Mysql8.0数据库跨平台编程实战
+** Contact               : 913902738@qq.com
+** Author                : 朱文泉
+** Function              ：测试封装库
+***************************************************************************/
+
 #include <iostream>
 #include"ccmysql.h"
 #include <thread> 

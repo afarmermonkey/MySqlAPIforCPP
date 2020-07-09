@@ -1,3 +1,12 @@
+/************************FILE INFOMATION***********************************
+**
+** Project Project       : C++Mysql8.0数据库跨平台编程实战
+** Contact               : 913902738@qq.com
+** Author                : 朱文泉
+** CCMysql  ：封装的mysql类，所有的数据库操作都是类成员函数
+***************************************************************************/
+
+
 #include"ccmysql.h"
 #include<iostream>
 #include<mysql.h>
@@ -6,7 +15,7 @@ using namespace std;
 //所有函数都不能保证线程安全
 namespace cc {
 
-	bool CCMysql::Init()
+	bool CCMysql::Init() //初始化
 	{
 
 		//新创建一个MYSQL 对象

@@ -1,3 +1,11 @@
+/************************FILE INFOMATION***********************************
+**
+** Project Project       : C++Mysql8.0数据库跨平台编程实战
+** Contact               : 913902738@qq.com
+** Author                : 朱文泉
+** Function              ：测试sql多条语句执行
+***************************************************************************/
+
 #include<iostream>
 #include<mysql.h>
 #include<thread>

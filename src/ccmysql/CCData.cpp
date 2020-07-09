@@ -1,3 +1,11 @@
+/************************FILE INFOMATION***********************************
+**
+** Project Project       : C++Mysql8.0数据库跨平台编程实战
+** Contact               : 913902738@qq.com
+** Author                : 朱文泉
+** CCData  ：数据库封装所用的数据结构
+***************************************************************************/
+
 #include "CCData.h"
 #include<fstream>
 #include<iostream>
@@ -9,6 +17,7 @@
 #endif
 using namespace std;
 #ifndef _WIN32
+//Linux环境的字符急转换
 static size_t Convert(char* from_cha, char* to_cha, char* in, size_t inlen, char* out, size_t outlen)
 {
 	//转换上下文
@@ -103,6 +112,7 @@ namespace cc {
 		string re = "";
 		//1 UFT8 转为unicode win utf16
 #ifdef _WIN32
+//WIN环境的字符集转换
 	//1.1 统计转换后字节数
 		int len = MultiByteToWideChar(CP_UTF8,	//转换的格式
 			0,			//默认的转换方式
@@ -138,7 +148,8 @@ namespace cc {
 	std::string CCData::GBKToUTF8()
 	{
 		string re = "";
-#ifdef _WIN32	
+#ifdef _WIN32
+//WIN环境的字符集转换	
 		//GBK转unicode
 		//1.1 统计转换后字节数
 		int len = MultiByteToWideChar(CP_ACP,	//转换的格式
@@ -164,6 +175,7 @@ namespace cc {
 		re.resize(len);
 		WideCharToMultiByte(CP_UTF8, 0, (wchar_t*)udata.data(), -1, (char*)re.data(), len, 0, 0);
 #else
+	//Linux环境的字符急转换
 		re.resize(1024);
 		int inlen = strlen(data);
 		Convert((char*)"gbk", (char*)"utf-8", (char*)data, inlen, (char*)re.data(), re.size());
