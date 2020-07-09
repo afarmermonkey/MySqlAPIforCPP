@@ -7,6 +7,6 @@ mysql提供了官方的CAPI，使用起来相对复杂。本项目对MySQL的官
 #doc文件里提供MySQL Workbench的免安装版
 # Linux环境：
 #Ubuntu18.04       
-#MySQL Version:MySQL8.0.13
-#gcc version: 7.05
-#make version: GNU Make 4.1
+#MySQL Version:MySQL8.0.13   
+#gcc version: 7.05   
+#make version: GNU Make 4.1   
