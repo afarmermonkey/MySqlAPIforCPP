@@ -1,0 +1,2 @@
+E:\WorkSpace\C++\MySql\src\testMysqllib\x64\Debug\testMysqllib.exe
+E:\WorkSpace\C++\MySql\src\testMysqllib\x64\Debug\testMysqllib.pdb

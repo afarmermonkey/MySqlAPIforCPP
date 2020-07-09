@@ -1,0 +1,7 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  test_stmt.cpp
+E:\WorkSpace\C++\MySql\src\test_stmt\test_stmt.cpp(59,5): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_stmt\test_stmt.cpp(78,21): warning C4244: “=”: 从“std::streamoff”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_stmt\test_stmt.cpp(91,24): warning C4244: “+=”: 从“std::streamsize”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_stmt\test_stmt.cpp(100,41): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+  testMysqllib.vcxproj -> E:\WorkSpace\C++\MySql\src\test_stmt\..\..\bin\test_stmt\test_stmt_d.exe

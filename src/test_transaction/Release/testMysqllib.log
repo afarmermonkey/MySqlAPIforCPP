@@ -1,0 +1,2 @@
+﻿testmysqllib.obj : error LNK2001: 无法解析的外部符号 _mysql_init@4
+E:\WorkSpace\C++\MySql\src\testMysqllib\Release\testMysqllib.exe : fatal error LNK1120: 1 个无法解析的外部命令

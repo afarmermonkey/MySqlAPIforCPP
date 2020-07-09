@@ -1,0 +1,11 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(testMysqllib.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  testMysqlquery.cpp
+E:\WorkSpace\C++\MySql\src\testMysqlquery\testMysqlquery.cpp(30,52): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+    正在创建库 ..\..\bin\testMysqlquery.lib 和对象 ..\..\bin\testMysqlquery.exp
+  正在生成代码
+  1 of 11 functions ( 9.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  testMysqllib.vcxproj -> E:\WorkSpace\C++\MySql\src\testMysqlquery\..\..\bin\testMysqlquery.exe

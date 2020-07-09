@@ -1,0 +1,9 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(testMysqllib.vcxproj, testMysqlquery.vcxproj, testTable.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  test_table.cpp
+E:\WorkSpace\C++\MySql\src\test_table\test_table.cpp(56,15): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_table\test_table.cpp(72,14): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_table\test_table.cpp(102,14): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_table\test_table.cpp(116,14): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+E:\WorkSpace\C++\MySql\src\test_table\test_table.cpp(132,14): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
+  testMysqllib.vcxproj -> E:\WorkSpace\C++\MySql\src\test_table\..\..\bin\test_table\test_table_d.exe

@@ -1,0 +1,2 @@
+﻿testmysqllib.obj : error LNK2019: 无法解析的外部符号 _mysql_init@4，函数 _main 中引用了该符号
+E:\WorkSpace\C++\MySql\src\testMysqllib\Debug\testMysqllib.exe : fatal error LNK1120: 1 个无法解析的外部命令
