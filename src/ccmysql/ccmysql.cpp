@@ -14,7 +14,13 @@
 using namespace std;
 //所有函数都不能保证线程安全
 namespace cc {
+	CCMysql::CCMysql()
+	{
+	}
 
+	CCMysql::~CCMysql()
+	{
+	}
 	bool CCMysql::Init() //初始化
 	{
 

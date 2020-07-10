@@ -75,13 +75,7 @@ namespace cc {
 	private:
 	};
 
-	CCMysql::CCMysql()
-	{
-	}
 	
-	CCMysql::~CCMysql()
-	{
-	}
 }
 
 #endif

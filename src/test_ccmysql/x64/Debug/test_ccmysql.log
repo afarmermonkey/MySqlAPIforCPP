@@ -1,10 +1,5 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
   test_ccmysql.cpp
-E:\WorkSpace\C++\MySql\src\ccmysql\ccmysql.h(79,2): warning C4273: “cc::CCMysql::CCMysql”: dll 链接不一致
-E:\WorkSpace\C++\MySql\src\ccmysql\ccmysql.h(73,3): message : 参见“{ctor}”的前一个定义
-E:\WorkSpace\C++\MySql\src\ccmysql\ccmysql.h(83,2): warning C4273: “cc::CCMysql::~CCMysql”: dll 链接不一致
-E:\WorkSpace\C++\MySql\src\ccmysql\ccmysql.h(74,4): message : 参见“{dtor}”的前一个定义
-E:\WorkSpace\C++\MySql\src\test_ccmysql\test_ccmysql.cpp(219,42): warning C4311: “类型强制转换”: 从“const char *”到“long”的指针截断
-E:\WorkSpace\C++\MySql\src\test_ccmysql\test_ccmysql.cpp(219,42): warning C4302: “类型强制转换”: 从“const char *”到“long”截断
-    正在创建库 ..\..\bin\test_ccmysql.lib 和对象 ..\..\bin\test_ccmysql.exp
+E:\WorkSpace\C++\MySql\src\test_ccmysql\test_ccmysql.cpp(225,42): warning C4311: “类型强制转换”: 从“const char *”到“long”的指针截断
+E:\WorkSpace\C++\MySql\src\test_ccmysql\test_ccmysql.cpp(225,42): warning C4302: “类型强制转换”: 从“const char *”到“long”截断
   test_ccmysql.vcxproj -> E:\WorkSpace\C++\MySql\src\test_ccmysql\..\..\bin\test_ccmysql.exe

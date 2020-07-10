@@ -7,7 +7,7 @@
 ***************************************************************************/
 
 #include <iostream>
-#include"ccmysql.h"
+#include "ccmysql.h"
 #include <thread> 
 using namespace std;
 using namespace cc;
