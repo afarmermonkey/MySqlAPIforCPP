@@ -1,12 +1,3 @@
-/************************FILE INFOMATION***********************************
-**
-** Project Project       : C++Mysql8.0数据库跨平台编程实战
-** Contact               : 913902738@qq.com
-** Author                : 朱文泉
-** CCMysql  ：封装的mysql类，所有的数据库操作都是类成员函数
-***************************************************************************/
-
-
 #include"ccmysql.h"
 #include<iostream>
 #include<mysql.h>
@@ -21,7 +12,7 @@ namespace cc {
 	CCMysql::~CCMysql()
 	{
 	}
-	bool CCMysql::Init() //初始化
+	bool CCMysql::Init()
 	{
 
 		//新创建一个MYSQL 对象
@@ -207,12 +198,29 @@ namespace cc {
 		//迭代map
 		for (auto ptr = kv.begin(); ptr != kv.end(); ptr++)
 		{
+			//字段名
 			keys += "`";
-			keys += ptr->first;
+			//去掉@
+			if (ptr->first[0] == '@')
+			{
+				keys += ptr->first.substr(1, ptr->first.size() - 1);
+			}
+			else
+			{
+				keys += ptr->first;
+			}			
 			keys += "`,";
-			vals += "'";
-			vals += ptr->second.data;
-			vals += "',";
+			if (ptr->first[0] == '@')
+			{
+				vals += ptr->second.data;
+			}
+			else
+			{
+				vals += "'";
+				vals += ptr->second.data;
+				vals += "'";
+			}
+			vals += ",";
 		}
 		//去除结尾多余的逗号
 		keys[keys.size() - 1] = ' ';
@@ -229,6 +237,7 @@ namespace cc {
 
 	bool CCMysql::Insert(SQLDATA kv, std::string table)
 	{
+		
 		if (!mysql)
 		{
 			cerr << "Insert failed!: mysql is NULL	" << endl;

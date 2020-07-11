@@ -48,6 +48,7 @@ namespace cc {
 		std::string GetInsertSql(SQLDATA kv,std::string table);
 
 		//插入非二进制数据
+		//字段名称前加@ 比如@time ，其内容不加引号，一般用于MySQL的功能函数调用
 		bool Insert(SQLDATA kv, std::string table);
 		//插入二进制数据
 		bool InsertBin(SQLDATA kv, std::string table);
